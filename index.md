@@ -2,6 +2,10 @@
 layout: home
 ---
 
+## Acknowledgement
+
+Much of the instruction materials, resources and workflows presented in this course have been designed, maintained and curated by [Professor Thierry Sans](https://thierrysans.me) and previous TAs.
+
 ## Course Objectives
 
 This course seeks to develop students who:
@@ -44,7 +48,7 @@ We encourage you to post questions regarding course materials and assignments on
         <div class="col-xs-3 col-sm-3">Contact</div>
     </div>
     <div class="row">
-        <div class="hcolumn col-xs-3 col-sm-3">Thierry Sans</div>
+        <div class="hcolumn col-xs-3 col-sm-3">{{site.data.settings.instructor.name}}</div>
         <div class="col-xs-3 col-sm-3">{{site.data.settings.instructor.hours}}</div>
         <div class="col-xs-3 col-sm-3">{{site.data.settings.instructor.location}}</div>
         <div class="col-xs-3 col-sm-3">{{site.data.settings.instructor.contact}}</div>
