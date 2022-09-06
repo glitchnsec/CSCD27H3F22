@@ -93,6 +93,53 @@ We encourage you to post questions regarding course materials and assignments on
 
 	The discussion board is the best place to ask technical questions, and general questions about the course, assignments and labs. For personal issues, please use private posts. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
+- Recommended books
+
+    Although there are no required textbooks, you may choose to review the following textbooks for additional information discussed during the course. Access to these books are not a requirement to succeed in the course.
+
+    
+    - **Title:** Gray Hat Hacking: The Ethical Hacker's Handbook, Sixth Edition
+
+        **Author(s):** By Allen Harper, Ryan Linn, Stephen Sims, Michael Baucom, Huascar Tejeda, Daniel Fernandez, Moses Frost
+
+        **Publisher:** McGraw Hill
+
+        **Edition:** 6th Edition
+
+        **ISBN-10:** 1264268947
+
+        **ISBN-13:** 9781264268948
+
+    - **Title:** Applied Cryptography: Protocols, Algorithms and Source Code in C,
+
+        **Author(s):** Bruce Schneier
+
+        **Publisher:** Wiley
+
+        **Edition:** 20th Anniversary Edition
+
+        **ISBN-13:** 978-1-119-09672-6
+
+    - **Title:** Real-World Bug Hunting A Field Guide to Web Hacking
+
+        **Author(s):** Peter Yaworski
+
+        **Publisher:** No Starch Press
+
+        **Edition:** 1st Edition
+
+        **ISBN-13:** 978-1-59327-861-8
+
+    - **Title:** Computer Security: Art and Science
+
+        **Author(s):** Matt Bishop
+
+        **Publisher:** Pearson
+
+        **Edition:** 2nd Edition
+
+        **ISBN-13:** 9780321712332
+
 - The [anonymous feedback form]({{site.data.settings.feedback}})
 
 	If you have feedback about the course, you can send an anonymous feedback to the course instructor (you also have the *option* of including your name). Since the sender cannot be determined, comments sent through the feedback form are considered public, and they may receive a response at the beginning of class or on the discussion board.
