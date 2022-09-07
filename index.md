@@ -140,6 +140,8 @@ We encourage you to post questions regarding course materials and assignments on
 
         **ISBN-13:** 9780321712332
 
+    A copy of each book will eventually be available at the library for no more than 3-day loan.
+
 - The [anonymous feedback form]({{site.data.settings.feedback}})
 
 	If you have feedback about the course, you can send an anonymous feedback to the course instructor (you also have the *option* of including your name). Since the sender cannot be determined, comments sent through the feedback form are considered public, and they may receive a response at the beginning of class or on the discussion board.
