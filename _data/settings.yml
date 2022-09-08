@@ -4,7 +4,7 @@ title: Computer and Network Security
 edition: Fall 2022
 description: This course is meant to offer Computer Science undergraduate students a broad overview of the field of computer security. Students will learn the basic concepts in computer security including software vulnerability analysis and defense, networking security, applied cryptography. Students will also learn the fundamental methodology for how to design and analyze the security of critical systems.
 website: https://glitchnsec.github.io/CSCD27H3F22/
-github: https://github.com/glitchnsec/CSCD27H3F22
+github: https://github.com/glitchnsec/CSCD27H3F22/tree/f22-dev
 piazza: https://piazza.com/utoronto.ca/fall2022/cscd27
 feedback: https://forms.office.com/r/VvSPkbYPjb
 
@@ -20,11 +20,11 @@ instructor:
 
 # https://www.fingerlakesbmw.org/main/flobfuscate.php
 assistants:
-    - name: TBD
+    - name: Meixuan Lu
       contact: TBD
       hours: TBD
       location: TBD
-    - name: TBD
+    - name: Tahmid Haque
       contact: TBD
       hours: TBD
       location: TBD
