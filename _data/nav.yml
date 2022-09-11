@@ -6,6 +6,10 @@
   url: /tutorials/
   absolute: False
 
+- title: Seclab
+  url: https://seclab.space
+  absolute: True
+
 - title: Piazza
   url:  https://piazza.com/utoronto.ca/fall2022/cscd27
   absolute: True
