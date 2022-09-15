@@ -10,7 +10,10 @@
 
 - week: Introductory Cryptography
   notes:
-      Classical Cryptography, Digests, Symmetric Cryptography, Public-key Cryptography: 02/CSCD27-IntroductoryCryptography
+      Introductory Classical Cryptography: 02/CSCD27-IntroductoryClassicalCryptography
+      Introductory Digests: 02/CSCD27-IntroductoryMessageDigests
+      Introductory Symmetric Cryptography: 02/CSCD27-IntroductorySymmetricCryptography
+      Introductory Asymmetric Cryptography: 02/CSCD27-IntroductoryAsymmetricCryptography
 
   readings:
       The original RSA paper: http://people.csail.mit.edu/rivest/Rsapaper.pdf
