@@ -1,5 +1,4 @@
 - week: Introduction & Risk Management
-#  link: https://youtu.be/SMkotdCR2LE
   notes:
       Course Introduction: 01/CSCD27-Introduction
       Definitions: 01/CSCD27-Definitions
@@ -8,19 +7,19 @@
       CTF Challenge Portal: 01/CSCD27-Seclab
   readings:
       Security Engineering: http://www.cl.cam.ac.uk/~rja14/Papers/SE-01.pdf
-#
+
 - week: Introductory Cryptography
-#  #Classical Cryptography, Symmetric Cryptography, Public-key Cryptography, Quantum Cryptography
-#  link: https://youtu.be/joJvC5l_MM0
-#  notes:
-#      Classical Cryptography: 02/CSCD27-ClassicalCryptography
-#      Symmetric Encryption: 03/CSCD27-SymmetricEncryption
-#      Asymmetric Encryption: 04/CSCD27-AsymmetricEncryption
-#
+  notes:
+      Classical Cryptography, Digests, Symmetric Cryptography, Public-key Cryptography: 02/CSCD27-IntroductoryCryptography
+
   readings:
       The original RSA paper: http://people.csail.mit.edu/rivest/Rsapaper.pdf
       AES Standard: http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf
       Rijndael Proposal for AES Competition: http://csrc.nist.gov/archive/aes/rijndael/Rijndael-ammended.pdf
+      Steganography: https://glitchnsec.github.io/presentations/ll-steganography.html
+      #Classical Cryptography: 02/CSCD27-ClassicalCryptography
+      #Symmetric Encryption: 03/CSCD27-SymmetricEncryption
+      #Asymmetric Encryption: 04/CSCD27-AsymmetricEncryption
 - week: Applied Cryptography
 #  #Hash Functions and Protocols
 #  #Digital Signatures and Protocols
