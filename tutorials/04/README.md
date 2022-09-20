@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /tutorials/03/
+permalink: /tutorials/04/
 ---
 
 # Classical Cryptography

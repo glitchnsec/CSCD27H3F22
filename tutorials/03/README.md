@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /tutorials/03/
+---
+
 # Symmetric Cryptography
 
 ## Stream Cipher
