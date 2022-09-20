@@ -2,12 +2,12 @@
 
 - week: Risk Assessment Analysis
   handout: 02/
-#
+
 - week: Introductory Cryptography
-#  handout: 03/
-#
+  handout: 04/
+
 - week: Applied Cryptography
-#  handout: 04/
+#  handout: 03/
 #  handout: 05/
 #
 - week: Network insecurity
