@@ -3,57 +3,45 @@ layout: default
 permalink: /tutorials/04/
 ---
 
-# Classical Cryptography
+# Symmetric Cryptography
 
-## Cryptosystems
+## Stream Cipher
 
-Alice wants to send a message to Bob. Each message is composed of 26 characters (no space, no punctuation). To encrypt each message, Alice is considering two ciphers:
+Mallory has been able to hijack the communication made by the ATM machine inside the building of *University of Fail*. She notices that, every time somebody performs a transaction, the ATM sends some data to a server named `atm.bank-of-fail.com`. 
 
-- cipher 1: a monoalphabetic cipher that substitutes each letter of the alphabet by another one (a.k.a substitution cipher) . 
-- cipher 2: a polyalphabetic cipher that combines the plaintext with a key (a.k.a Vigenere's cipher). The key length is fixed to 15 characters exactly. 
+Mallory has found some information online about the communication protocol version 1.0 used by the bank. Each transaction contains the following information:
 
-1. After calculating the entropy of both ciphers. Which one is the most resistant to a brute force attack?
+- an ATM ID (16 bytes)
+- customer's bank account (16 bytes)
+- the transaction ID (8 bytes)
+- the transaction date and time (8 bytes)
+- the transaction amount (4 bytes)
 
-2. Which one is the most resistant to a ciphertext only attack? 
+Unfortunately, Mallory is not able to read those transactions since they are [XOR-encrypted](https://pycryptodome.readthedocs.io/en/latest/src/util/util.html#crypto-util-strxor-module) using a 128 bits secret key shared between the ATM and the bank. 
 
-3. How would you attack both of these ciphers using a plaintext attack? 
+1. Could Mallory brute-force the shared key? 
 
-## Frequency analysis
+2. Mallory goes to the ATM machine to withdraw some money. Then she gets a receipts from the ATM with the transaction ID and the date and time. Now, she knows all values of the plaintext except the ATM ID. Could she crack the key with this information? 
 
-In this discussion, we will preview the first sophisticated approach to cryptanalysis, described by Al-Kindi, born in Basra in what is now Iraq, in 801.
+3. The bank is now using a proper stream cipher [RC4](https://pycryptodome.readthedocs.io/en/latest/src/util/util.html#crypto-util-strxor-module) with another 128 bits key and the ATM ID used as nonce (that Mallory still does not know). Could Mallory crack the key using the same approach as question 2? 
 
-![al-kindi](media/al-kindi.jpg)
+4. Instead of using the ATM ID, the bank is now using the transaction ID as nonce (but still using the same key). The transaction ID is unique to each transaction. Could Mallory crack the key using the same approach as question 3?
 
-The first graph below shows the letter frequencies for an article that appeared in the Toronto Star. The graph was produced by generating a frequency count of alphabetic characters using a Python program, and then displaying that data using an MS-Excel chart.
+## Block Cipher (and Block Cipher modes)
 
-![original](media/original.png)
+The bank is now using [AES in ECB (Electronic Code Book) mode](https://pycryptodome.readthedocs.io/en/latest/src/cipher/classic.html#ecb-mode) with an 256 bits key.
 
-The second graph below shows the letter frequencies for a Caesar (shift) cipher encoding of that same article. Caesar certainly simplifies the cryptanalyst's job!
+1. Could Mallory brute-force the shared key? 
 
-![caesar](media/caesar.png)
+2. Could Mallory use a known-plaintext attack? 
 
-In class we will see that Caesar and its more sophisticated cousin, monoalphabetic cipher, are both vulnerable to frequency 
-cryptanalysis. 
+3. When analyzing different ciphertexts, Mallory finds out some intersting correlations. Could you explain each of them?
 
-3. Based on your understanding of the Caesar cipher, can you guess the key that was used to produce the second graph. 
+    - each ciphertext is 64 bytes but the plaintext is supposed to be 52 bytes, why? 
+    - all ciphertexts have the same first 16 bytes [0..14], why?
+    - some (but not all) ciphertexts have the same second set of 16 bytes [15..31], why?
+    - there are no two ciphertexts that have the same third set of 16 bytes [32..47]
+    - some (but not all) ciphertexts have the same last set of 16 bytes [48..64], why?
 
-Vigenere, a polyalphabetic cipher, should be less vulnerable to this attack. Yet, the third graph below shows a graph of letter-frequency for a Vigenere-encoding of the same newspaper article whose letter frequency is displayed above.
+4. Now, the bank is using [AES in CBC mode (Cipher Block Chaining)](https://pycryptodome.readthedocs.io/en/latest/src/cipher/classic.html#cbc-mode) mode with the same nonce for each transaction. Would Mallory be able to do the same observation as in 3?
 
-![vigenere](media/vigenere.png)
-
-4. Based on your understanding of the Vigenere cipher, can you guess the length of the key?
-
-5. What role does a Vigenere password play in frequency profile of the ciphertext?
-
-6. What would the ideal histogram look like, from the point of view of making cryptanalysis as difficult as possible?
-
-## Scale of key robustness
-
-7. Imagine a ciphertext encrypted with a 128 bits key and let's presume we have a very powerful computer that can brute force 10^12 keys per second.
-
-    - How many keys in total?
-    - How many keys per year can we compute?
-    - How long would it take to compute all keys?
-    - How many computers would you need to crack all keys within a day?
-
-8. Same question with 256 bits? 
