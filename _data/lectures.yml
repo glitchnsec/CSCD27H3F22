@@ -24,15 +24,17 @@
       #Symmetric Encryption: 03/CSCD27-SymmetricEncryption
       #Asymmetric Encryption: 04/CSCD27-AsymmetricEncryption
 - week: Applied Cryptography
-#  #Hash Functions and Protocols
-#  #Digital Signatures and Protocols
-#  link: https://youtu.be/4JGj_9_ZQLg
-#  link: https://youtu.be/7OaZl1OKZZM
-#  notes:
-#      Asymmetric Protocols: 04/CSCD27-AsymmetricProtocols
-#  #   Quantum Computing and Quantum Cryptography: 04/CSCD27-Quantum
-#      Hash Functions: 03/CSCD27-CryptographicHashFunctions
-#      Symmetric Protocols: 03/CSCD27-SymmetricProtocols
+  notes:
+      Applied Digests: 03/AppliedMessageDigests
+      Applied Symmetric Cryptography: 03/CSCD27-AppliedSymmetricCryptography
+      Applied Asymmetric Cryptography: 03/CSCD27-AppliedAsymmetricCryptography
+      Secure Key Management: 03/CSCD27-SecureKeyManagement
+      Conclusion: 03/CSCD27-CyrptographyConclusions
+      #Symmetric Cryptography Exercise: ../tutorials/04/
+      #Asymmetric Protocols: 04/CSCD27-AsymmetricProtocols
+      #Quantum Computing and Quantum Cryptography: 04/CSCD27-Quantum
+      #Hash Functions: 03/CSCD27-CryptographicHashFunctions
+      #Symmetric Protocols: 03/CSCD27-SymmetricProtocols
   readings:
       Programming Satan's Computer: https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf
       How does SSL/TLS work? : https://security.stackexchange.com/questions/20803/how-does-ssl-tls-work
