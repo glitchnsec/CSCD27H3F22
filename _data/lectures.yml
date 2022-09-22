@@ -25,11 +25,11 @@
       #Asymmetric Encryption: 04/CSCD27-AsymmetricEncryption
 - week: Applied Cryptography
   notes:
-      Applied Digests: 03/AppliedMessageDigests
+      Applied Digests: 03/CSCD27-AppliedMessageDigests
       Applied Symmetric Cryptography: 03/CSCD27-AppliedSymmetricCryptography
       Applied Asymmetric Cryptography: 03/CSCD27-AppliedAsymmetricCryptography
       Secure Key Management: 03/CSCD27-SecureKeyManagement
-      Conclusion: 03/CSCD27-CyrptographyConclusions
+      Cryptography Conclusions: 03/CSCD27-CryptographyConclusions
       #Symmetric Cryptography Exercise: ../tutorials/04/
       #Asymmetric Protocols: 04/CSCD27-AsymmetricProtocols
       #Quantum Computing and Quantum Cryptography: 04/CSCD27-Quantum
