@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /misc/SupplementaryVM
+permalink: /doc/docker/vm/
 ---
 
 ## Notes ##

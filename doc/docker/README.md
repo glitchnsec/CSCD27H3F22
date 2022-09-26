@@ -7,7 +7,7 @@ permalink: /doc/docker/
 
 Throughout the semester, we are going to attack and defend vulnerable systems. For scalability and security issues, we cannot perform these attacks on real computer systems. Instead, we are going to use *Docker* to run lightweight virtual machines locally (either on the lab machines or on your own computer).
 
-*Docker* is installed on the linux lab but you can also [install it on your own computer](https://docs.docker.com/engine/installation/) or use a pre-configured [VM](/misc/SupplementaryVM) (provided with no warranties). For now, we are going to go through basic definitions and commands to get you started. Indeed, we encourage to [learn more about docker](https://docs.docker.com/get-started/).
+*Docker* is installed on the linux lab but you can also [install it on your own computer](https://docs.docker.com/engine/installation/) or use a pre-configured [VM](vm/) (provided with no warranties). For now, we are going to go through basic definitions and commands to get you started. Indeed, we encourage to [learn more about docker](https://docs.docker.com/get-started/).
 
 Here are some basic definitions taken from the [Get Started](https://docs.docker.com/get-started/) page on the *Docker* website.
 
