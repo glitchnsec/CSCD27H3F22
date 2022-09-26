@@ -28,9 +28,9 @@ permalink: /doc/docker/vm/
     | Ram | 4GB |
     | Disk | 20GB |
     | vProc | 4 |
-    | Docker | Installed - |
+    | Docker | Installed - 20.10.18, build b40c2f6|
     | Python | Installed - 3.10.8|
-    | Wireshark | Installed - |
+    | Wireshark | Installed - 3.6.2|
     | Password | Passw0rd! **(WARNING: Weak password)**|
     | Virtualization (intel vt-x/amd-v) | Enabled if supported by host |
     | SSH | Enabled |
