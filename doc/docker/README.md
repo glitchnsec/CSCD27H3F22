@@ -7,7 +7,7 @@ permalink: /doc/docker/
 
 Throughout the semester, we are going to attack and defend vulnerable systems. For scalability and security issues, we cannot perform these attacks on real computer systems. Instead, we are going to use *Docker* to run lightweight virtual machines locally (either on the lab machines or on your own computer).
 
-*Docker* is installed on the linux lab but you can also [install it on your own computer](https://docs.docker.com/engine/installation/). For now, we are going to go through basic definitions and commands to get you started. Indeed, we encourage to [learn more about docker](https://docs.docker.com/get-started/).
+*Docker* is installed on the linux lab but you can also [install it on your own computer](https://docs.docker.com/engine/installation/) or use a pre-configured [VM](/misc/SupplementaryVM) (provided with no warranties). For now, we are going to go through basic definitions and commands to get you started. Indeed, we encourage to [learn more about docker](https://docs.docker.com/get-started/).
 
 Here are some basic definitions taken from the [Get Started](https://docs.docker.com/get-started/) page on the *Docker* website.
 
@@ -17,9 +17,9 @@ Here are some basic definitions taken from the [Get Started](https://docs.docker
 
 **important:** Before we start, it is important to know two things while working with Docker **on the linux lab machines** (these recommendations do not apply on when you work on your own computer).
 
-1. Do *not* SSH into a lab machine if you are going to use *Docker*. Since there is only one *docker* daemon, it will conflict if two people both use the docker daemon on the same machine. Therefore, always work in front of the lab machine rather than remotely.  
+1. **Do *not* SSH into a lab machine if you are going to use *Docker*.** Since there is only one *docker* daemon, it will conflict if two people both use the docker daemon on the same machine. Therefore, always work in front of the lab machine rather than remotely.
 
-2. The docker daemon can only access files that are in your `/courses/courses/cscd27f19/{utorid}` directory. You might get a `permission denied` message if you try to access files elsewhere with *Docker*. Therefore, always work with *Docker* from that directory. Make sure that all files that docker will use must be in that directory with read permissions to group and others (og+r). If you have directories, all of these directories must be traversable (og+x)
+2. The docker daemon can only access files that are in your `/courses/courses/cscd27f22/{utorid}` directory. You might get a `permission denied` message if you try to access files elsewhere with *Docker*. Therefore, always work with *Docker* from that directory. Make sure that all files that docker will use must be in that directory with read permissions to group and others (og+r). If you have directories, all of these directories must be traversable (og+x)
 
 Let us start with the `hello-world` example for *Docker*. The following command downloads the image `hello-world` (the first time only) and then run a container from that image. This container shows a message and then stop. 
 
