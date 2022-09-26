@@ -6,7 +6,7 @@ permalink: /doc/docker/vm/
 ## Notes ##
 - You may not need this if you having a working docker installation on your physical machine or another virtual machine
 - This VM is provided as-is with no warranty. It is still preferrable to do lab work in the CS Labs in-person
-- If you use Hyper-V i.e any of Windows Sandbox, WSL, Hyper-V Manager etc. You'll need to disable Hyper-V to use any other virtualization technology. Porting this VM to Hyper-V is beyond the scope of this provision however, it is fairly trivial to create a similar Hyper-V VM given the configuration's below.
+- If you use Hyper-V i.e any of Windows Sandbox, WSL, Hyper-V Manager etc or have intel vt-x/amd-v unavailable for some reason. ~~You'll need to disable Hyper-V to use any other virtualization technology. Porting this VM to Hyper-V is beyond the scope of this provision however, it is fairly trivial to create a similar Hyper-V VM given the configuration's below.~~ Use the VM tagged "noVirt".
 
 ## Requirements ##
 - Basic understanding of virtualization
@@ -15,7 +15,8 @@ permalink: /doc/docker/vm/
     - [VMware Fusion](https://customerconnect.vmware.com/evalcenter?p=fusion-player-personal)
 
 - Provided resources
-    - [CSCD27-supplementary-vm.ova](https://utoronto-my.sharepoint.com/:u:/g/personal/kc_udonsi_mail_utoronto_ca/ETgmPgVr_-tJq9lipPYF7pUBZnrknOQH_-vtmG2K9m6pPg?e=hYNhFP)
+    - [CSCD27-supplementary-vm.ova](https://utoronto-my.sharepoint.com/:u:/g/personal/kc_udonsi_mail_utoronto_ca/ETgmPgVr_-tJq9lipPYF7pUBZnrknOQH_-vtmG2K9m6pPg?e=hYNhFP) (Will not work with Hyper-V enabled host)
+    - [CSCD27-supplementary-vm-noVirt.ova](https://utoronto-my.sharepoint.com/:u:/g/personal/kc_udonsi_mail_utoronto_ca/EeWul2UkjjxFmycAob1rlb0BjEsRhope2pwNLiVSoAsiFQ?e=TGf1Gi) (Will work with Hyper-V enabled host)
     - Prof. Thierry's [Introduction to Docker](https://glitchnsec.github.io/CSCD27H3F22/doc/docker/)
 
 ## Summary ##
@@ -33,7 +34,7 @@ permalink: /doc/docker/vm/
     | Python | Installed - 3.10.8|
     | Wireshark | Installed - 3.6.2|
     | Password | Passw0rd! **(WARNING: Weak password)**|
-    | Virtualization (intel vt-x/amd-v) | Enabled if supported by host |
+    | Virtualization (intel vt-x/amd-v) | Enabled in CSCD27-supplementary-vm.ova<br>Disabled in CSCD27-supplementary-vm-noVirt.ova |
     | SSH | Enabled |
     | IP | dynamic |
     | Network | NAT (will use your host's network)|
