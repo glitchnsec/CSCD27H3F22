@@ -25,6 +25,7 @@ permalink: /doc/docker/vm/
 
     | Configuration | Value |
     |:----|:----|
+    | Ubuntu | 22.04.1 LTS|
     | Ram | 4GB |
     | Disk | 20GB |
     | vProc | 4 |
