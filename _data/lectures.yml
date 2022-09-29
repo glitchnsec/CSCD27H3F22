@@ -47,6 +47,7 @@
   notes:
       Network (in)security: 04/CSCD27-InternetInsecurity
   readings:
+      CSCD27 Supplementary VM: ../doc/docker/vm
       Intercepting Mobile Communications - The Insecurity of 802.11: http://www.cs.colorado.edu/~rhan/CSCI_7143_001_Fall_2002/Papers/Borisov2001_Insecure802_11.pdf
       Decrypting HTTPS Traffic with Master Secret log file: https://unit42.paloaltonetworks.com/wireshark-tutorial-decrypting-https-traffic/
       Observing Application Protocols - CSCD58S18: 

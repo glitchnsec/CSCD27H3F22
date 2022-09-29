@@ -3,45 +3,43 @@ layout: default
 permalink: /tutorials/04/
 ---
 
-# Symmetric Cryptography
+The goal of this tutorial is to fully understand the challenge `mini-tls-13`. 
 
-## Stream Cipher
+# Authenticated Encryption
 
-Mallory has been able to hijack the communication made by the ATM machine inside the building of *University of Fail*. She notices that, every time somebody performs a transaction, the ATM sends some data to a server named `atm.bank-of-fail.com`. 
+Let us assume that Alice and Bob have exchanged a session key ***k***. Alice sends a message *m* to Bob encrypted with the key *k* using AES with an Authenticated Encryption mode (encrypt-then-mac method). 
 
-Mallory has found some information online about the communication protocol version 1.0 used by the bank. Each transaction contains the following information:
+1. How does Alice encrypt ***m*** with the key ***k***? 
 
-- an ATM ID (16 bytes)
-- customer's bank account (16 bytes)
-- the transaction ID (8 bytes)
-- the transaction date and time (8 bytes)
-- the transaction amount (4 bytes)
+2. What does she sent over to Bob? 
 
-Unfortunately, Mallory is not able to read those transactions since they are [XOR-encrypted](https://pycryptodome.readthedocs.io/en/latest/src/util/util.html#crypto-util-strxor-module) using a 128 bits secret key shared between the ATM and the bank. 
+3. How does bob decrypt that ciphertext while making sure that Mallory has not tampered with the message? 
 
-1. Could Mallory brute-force the shared key? 
+# Asymmetric Cryptography
 
-2. Mallory goes to the ATM machine to withdraw some money. Then she gets a receipts from the ATM with the transaction ID and the date and time. Now, she knows all values of the plaintext except the ATM ID. Could she crack the key with this information? 
+Let us assume the following:
+- Alice has an asymmetric key pair ***(ksA, KpA)***
+- Bob has an asymmetric key pair ***(ksB, KpB)***
+- They have each others public key i.e Alice knows ***KpB*** and Bob knows ***KpA***.
 
-3. The bank is now using a proper stream cipher [RC4](https://pycryptodome.readthedocs.io/en/latest/src/util/util.html#crypto-util-strxor-module) with another 128 bits key and the ATM ID used as nonce (that Mallory still does not know). Could Mallory crack the key using the same approach as question 2? 
+To simplify the exercise, let us assume that we can use these asymmetric keys to encrypt and decrypt any message of any length easily (though this is not true in practice). 
 
-4. Instead of using the ATM ID, the bank is now using the transaction ID as nonce (but still using the same key). The transaction ID is unique to each transaction. Could Mallory crack the key using the same approach as question 3?
+4. Alice wishes to send a signed but not encrypted message to Bob, how does she generates the signature ***s*** and what does she send over to Bob? 
 
-## Block Cipher (and Block Cipher modes)
+5. How does Bob verifies the signature? 
 
-The bank is now using [AES in ECB (Electronic Code Book) mode](https://pycryptodome.readthedocs.io/en/latest/src/cipher/classic.html#ecb-mode) with an 256 bits key.
+6. Alice wishes to send an encrypted and signed message to Bob, how does she "sign-then-encrypt" the message and what does she send over to Bob? 
 
-1. Could Mallory brute-force the shared key? 
+7. How does Bob extract the message and verify the signature? 
 
-2. Could Mallory use a known-plaintext attack? 
+## Key exchange
 
-3. When analyzing different ciphertexts, Mallory finds out some intersting correlations. Could you explain each of them?
+In practice, it is too slow to use public-key cryptography on large messages. One solution is to use public-key cryptography to exchange a public key but it is usually not recommended. 
 
-    - each ciphertext is 64 bytes but the plaintext is supposed to be 52 bytes, why? 
-    - all ciphertexts have the same first 16 bytes [0..14], why?
-    - some (but not all) ciphertexts have the same second set of 16 bytes [15..31], why?
-    - there are no two ciphertexts that have the same third set of 16 bytes [32..47]
-    - some (but not all) ciphertexts have the same last set of 16 bytes [48..64], why?
+8. Why is it better to exchange a session key using the Diffie-Hellman protocol rather than using public cryptography directly? 
 
-4. Now, the bank is using [AES in CBC mode (Cipher Block Chaining)](https://pycryptodome.readthedocs.io/en/latest/src/cipher/classic.html#cbc-mode) mode with the same nonce for each transaction. Would Mallory be able to do the same observation as in 3?
+## Public Key Infrastructure Trust model
 
+9. In TLS/SSL, how does Alice's browser trust a certificate supplied by Bob's website? 
+
+10. Describe how a man-in-the-middle attack could succeed on TLS/SSL?

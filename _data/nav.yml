@@ -10,6 +10,10 @@
   url: https://seclab.space
   absolute: True
 
+- title: Docker
+  url: /doc/docker/
+  absolute: False
+
 - title: Piazza
   url:  https://piazza.com/utoronto.ca/fall2022/cscd27
   absolute: True
