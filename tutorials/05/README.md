@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /tutorials/06/
+permalink: /tutorials/05/
 ---
 
 # Network Insecurity
@@ -64,7 +64,7 @@ As shown in the figure below, we consider three different scenarios in which Mal
 
 <pre>
     
-| Host Setting           | Eavesdropping           | Hijaking                | DOS                     |
+| Host Setting           | Eavesdropping           | Hijacking                | DOS                     |
 | -----------------------|:-----------------------:|:-----------------------:|:-----------------------:|
 | LAN                    |                         |                         |                         |
 | Route                  |                         |                         |                         |

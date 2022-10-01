@@ -8,11 +8,10 @@
 
 - week: Applied Cryptography
   handout: 04/
-#  handout: 05/
-#
+
 - week: Network insecurity
-#  handout: 06/
-# 
+  handout: 05/
+ 
 - break: <span class="em">Reading Week</span> 
 #  
 # 
