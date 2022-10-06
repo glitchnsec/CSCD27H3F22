@@ -54,9 +54,8 @@
       Basic Socket Programming - CSCD58S18: 04/cscd58s18_week4_tutorial.pdf
       Ethernet and IP Headers - CSCD58S18: 04/cscd58s18_week6_tutorial.pdf
 - week: Network Security
-#  link: https://youtu.be/iOP7tAePruI
-#  notes:
-#      Network Security: 06/CSCD27-NetworkSecurity
+  notes:
+      Network Security: 05/CSCD27-NetworkSecurity
   readings:
       The First Few Milliseconds of an HTTPS Connection: http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html
       The risks of mixed-content with HTTPS: https://www.youtube.com/watch?v=CSmacMZ0xZo
