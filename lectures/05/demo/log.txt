@@ -1,0 +1,30 @@
+10/4/22, 11:06:18.716 [NOTICE] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+10/4/22, 11:06:27.719 [NOTICE] New control connection opened from 127.0.0.1.
+10/4/22, 11:07:11.189 [NOTICE] Renaming old configuration file to "C:\Users\WDAGUtilityAccount\Desktop\Tor Browser\Browser\TorBrowser\Data\Tor\torrc.orig.1"
+10/4/22, 11:07:54.594 [NOTICE] Opening Socks listener on 127.0.0.1:9150
+10/4/22, 11:07:54.595 [NOTICE] Opened Socks listener connection (ready) on 127.0.0.1:9150
+10/4/22, 11:07:55.229 [NOTICE] Bootstrapped 5% (conn): Connecting to a relay
+10/4/22, 11:07:55.360 [NOTICE] Bootstrapped 10% (conn_done): Connected to a relay
+10/4/22, 11:07:55.497 [NOTICE] Bootstrapped 14% (handshake): Handshaking with a relay
+10/4/22, 11:07:56.224 [NOTICE] Bootstrapped 15% (handshake_done): Handshake with a relay done
+10/4/22, 11:07:56.225 [NOTICE] Bootstrapped 20% (onehop_create): Establishing an encrypted directory connection
+10/4/22, 11:07:56.348 [NOTICE] Bootstrapped 25% (requesting_status): Asking for networkstatus consensus
+10/4/22, 11:07:56.474 [NOTICE] Bootstrapped 30% (loading_status): Loading networkstatus consensus
+10/4/22, 11:08:18.771 [NOTICE] I learned some more directory information, but not enough to build a circuit: We have no usable consensus.
+10/4/22, 11:08:18.892 [NOTICE] Bootstrapped 40% (loading_keys): Loading authority key certs
+10/4/22, 11:08:20.393 [NOTICE] The current consensus has no exit nodes. Tor can only build internal paths, such as paths to onion services.
+10/4/22, 11:08:20.394 [NOTICE] Bootstrapped 45% (requesting_descriptors): Asking for relay descriptors
+10/4/22, 11:08:20.394 [NOTICE] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 0/6542, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of end bw (no exits in consensus, using mid) = 0% of path bw.)
+10/4/22, 11:08:21.141 [NOTICE] Bootstrapped 50% (loading_descriptors): Loading relay descriptors
+10/4/22, 11:08:21.739 [NOTICE] The current consensus contains exit nodes. Tor can build exit and internal paths.
+10/4/22, 11:08:25.140 [NOTICE] Bootstrapped 56% (loading_descriptors): Loading relay descriptors
+10/4/22, 11:09:02.522 [NOTICE] Bootstrapped 63% (loading_descriptors): Loading relay descriptors
+10/4/22, 11:09:43.367 [NOTICE] Bootstrapped 68% (loading_descriptors): Loading relay descriptors
+10/4/22, 11:09:45.372 [NOTICE] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+10/4/22, 11:09:46.115 [NOTICE] Bootstrapped 80% (ap_conn): Connecting to a relay to build circuits
+10/4/22, 11:09:46.194 [NOTICE] Bootstrapped 85% (ap_conn_done): Connected to a relay to build circuits
+10/4/22, 11:09:46.304 [NOTICE] Bootstrapped 89% (ap_handshake): Finishing handshake with a relay to build circuits
+10/4/22, 11:09:46.612 [NOTICE] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+10/4/22, 11:09:46.613 [NOTICE] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+10/4/22, 11:09:46.999 [NOTICE] Bootstrapped 100% (done): Done
+10/4/22, 11:09:47.920 [NOTICE] New control connection opened from 127.0.0.1.
