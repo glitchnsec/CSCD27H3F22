@@ -65,18 +65,19 @@
 - break: <span class="em">Reading Week</span>
 
 - week: OS and Program Insecurity
-#  # Vulnerabilities, Malicious Software
+#  # Vulnerabilities, Operating System
 #  #link: https://youtu.be/0DjFjmzTmjU
 #  #link: https://youtu.be/eA926XSUVu0
   readings: 
-     Smashing The Stack For Fun And Profit: http://phrack.org/issues/49/14.html
-     Google Analysis of Web-based Malware: http://www.usenix.org/events/hotbots07/tech/full_papers/provos/provos.pdf     
-#  notes:
-#      System Insecurity: 08/CSCD27-SystemInsecurity
+     Vuln 1001: C-Family Software Implementation Vulnerabilities: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Vulns1001_C-derived+2022_v1/course/
+     #Google Analysis of Web-based Malware: http://www.usenix.org/events/hotbots07/tech/full_papers/provos/provos.pdf     
+  notes:
+      System Insecurity: 06/CSCD27-OSandProgramInsecurity
 #      Malicious Software: 10/CSCD27-MaliciousSoftware
 #      Data Breach Case Studies: 10/Security Data Breach Case Studies.pdf
 #  
 - week: OS and Program Security
+#  Malicious Software, 
 #  # OS protections, Endpoint Detection and Response, AV etc, Secure Programming
 #  link: https://youtu.be/S6M8koRsv7o
   readings:
