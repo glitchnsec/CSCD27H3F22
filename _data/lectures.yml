@@ -66,7 +66,7 @@
 
 - week: OS and Program Insecurity
   readings: 
-     Vuln 1001 C-Family Software Implementation Vulnerabilities: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Vulns1001_C-derived+2022_v1/course/
+     Vuln 1001 C-Family Software Implementation Vulnerabilities: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Vulns1001_C-derived+2022_v1/about
      #Google Analysis of Web-based Malware: http://www.usenix.org/events/hotbots07/tech/full_papers/provos/provos.pdf     
   notes:
       OS and Program Insecurity: 06/CSCD27-OSandProgramInsecurity
