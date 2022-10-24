@@ -13,16 +13,15 @@
   handout: 05/
  
 - break: <span class="em">Reading Week</span> 
-#  
-# 
+
 - week: Network Security
   handout: 06/
-#
+
 - week: System Insecurity
-#  handout: 09/
-#  handout: 11/
-#
+  handout: 07/
+
 - week: System Security
+#  handout: 11/
 #  handout: 10/
 #
 - week: Web Insecurity
