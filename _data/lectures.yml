@@ -70,21 +70,14 @@
      #Google Analysis of Web-based Malware: http://www.usenix.org/events/hotbots07/tech/full_papers/provos/provos.pdf     
   notes:
       OS and Program Insecurity: 06/CSCD27-OSandProgramInsecurity
-#      Malicious Software: 10/CSCD27-MaliciousSoftware
 #      Data Breach Case Studies: 10/Security Data Breach Case Studies.pdf
 #  
 - week: OS and Program Security
-#  # Vulnerabilities, Operating System
-#  #link: https://youtu.be/0DjFjmzTmjU
-#  #link: https://youtu.be/eA926XSUVu0
-#  Malicious Software, 
-#  # OS protections, Endpoint Detection and Response, AV etc, Secure Programming
-#  link: https://youtu.be/S6M8koRsv7o
   readings:
-      Stack Overflows - Defeating Canaries, ASLR, DEP, NX: https://security.stackexchange.com/questions/20497/stack-overflows-defeating-canaries-aslr-dep-nx
-#  notes:
-#      System Security: 09/CSCD27-Protection
-#
+      Vuln 1001 C-Family Software Implementation Vulnerabilities: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Vulns1001_C-derived+2022_v1/about
+  notes:
+      OS and Program Security: 07/CSCD27-OSandProgramSecurity
+
 - week: Web Insecurity
 #  #Vulnerabilities, misconfigurations etc
 #  notes:
