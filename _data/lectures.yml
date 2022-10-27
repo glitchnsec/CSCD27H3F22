@@ -76,6 +76,7 @@
   readings:
       Vuln 1001 C-Family Software Implementation Vulnerabilities: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Vulns1001_C-derived+2022_v1/about
   notes:
+      Malware: 07/CSCD27-Malware
       OS and Program Security: 07/CSCD27-OSandProgramSecurity
 
 - week: Web Insecurity
