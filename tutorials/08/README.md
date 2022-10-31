@@ -3,55 +3,53 @@ layout: default
 permalink: /tutorials/08/
 ---
 
-# Passwords
+## Stack Protection
 
-A website requires its users to have passwords with a length of exactly 8 characters long and made of alpha-numeric characters.
+In this tutorial, you are asked to explain all stack protection mechanisms and identify them in the various assembly dumps of the `auth.c` example developed in the week 9 lecture.  
 
-1. How many passwords are possible?
+### Fortified Source Functions
 
-2. What is the password entropy (n-bit security)?
+1. What are Fortified Source Functions and how do they work? 
+2. How to enable it on Linux? 
+3. In `auth-fortify-enable.x86`, can you identify the "fortified" called to `strcpy`? 
 
-## Cracking passwords from the login page
+### Stack Canaries
 
-Assuming that we use a password cracking tool that tries different login/password using the login page. We roughly estimates that:
+4. What are stack canaries and how do they work? 
+5. How to enable it on Linux? 
+6. In `auth-canary-enable.x86`, can you identify where the canary is set and verifies in the function `pwd`?
 
-- the login page returns a response in 100ms
-- the cracking tool can spawn 100 threads sending such requests
+### Non Executable Stack
 
-3. How long would it take to:
+7. What is a non executable stack and how does it work? 
+8. How to enable it on Linux? 
+9. There is actually no difference at all between `auth-all-disable.x86` and `auth-nex-disable.x86`, why?
 
-    - brute-force the password for 1 user
-    - brute force the password for n users
-
-## Cracking unsalted hash passwords
-
-Assuming that we hack into their server and download their (lame) database of unsalted passwords. We roughly estimates that:
-
-- computing a hash takes 10^(-9) seconds
-- a table lookup takes 10^(-3) seconds (regardless the size of the table)
-- testing whether two hashes are equal takes no time 
-
-4. For all types of attack, how long would it take to:
-
-    - brute-force 1 password for m users
-    - brute-force m passwords for 1 user
-    - brute force m passwords for n users
-
-5. If we use rainbow tables, how long would it take to:
-
-    - crack the password of 1 user
-    - crack the password of n users
-
-## Cracking salted hash passwords
-
-Assuming now that the passwords are salted (each user has a different salt). 
-
-6. For all types of attack, how long would it take to:
-
-    - brute-force 1 password for m users
-    - brute-force m passwords for 1 user
-    - brute force m passwords for n users
+### ASLR - Address Space Layout Randomization
     
-7. How about using rainbow tables on salted passwords?     
+10. What is ASLR and how does it work? 
+11. How to enable it on Linux? 
 
+### PIC/PIE - Position Independent Code
+
+12. What is a position independent code and how does it work?
+13. How to enable it on Linux?
+14. In `auth-pie-enable.x86`, can you identify where/how the binary gets the offset to calculate the absolute address of the function `pwd`?
+
+### Malware
+
+1. What are the two main approaches use by antivirus software to detect malwares? 
+
+2. What is the difference between static analysis and dynamic analysis? 
+
+3. In a malware, what is the difference between the payload and the infection vector?
+
+4. What are the common techniques use to make malware undetectable by antivirus software?
+
+5. Defines these concepts related to modern malware:
+
+- RAT (Remote Administration Tool - Remote Access Trojan)
+- Malware Packer
+- Exploit kit
+- Bulletproof Host
 

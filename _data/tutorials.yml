@@ -21,14 +21,15 @@
   handout: 07/
 
 - week: System Security
-#  handout: 11/
-#  handout: 10/
-#
+  handout: 08/
+
 - week: Web Insecurity
 #  handout: 12/
 #
 - week: Web Security
 
 - week: Human Insecurity
-#  handout: 08/
+
+#  handout: 11/
+#  handout: 10/
 - week: Human Security
