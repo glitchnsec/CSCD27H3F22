@@ -20,9 +20,7 @@
       AES Standard: http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf
       Rijndael Proposal for AES Competition: http://csrc.nist.gov/archive/aes/rijndael/Rijndael-ammended.pdf
       Steganography: https://glitchnsec.github.io/presentations/ll-steganography.html
-      #Classical Cryptography: 02/CSCD27-ClassicalCryptography
-      #Symmetric Encryption: 03/CSCD27-SymmetricEncryption
-      #Asymmetric Encryption: 04/CSCD27-AsymmetricEncryption
+
 - week: Applied Cryptography
   notes:
       Applied Digests: 03/CSCD27-AppliedMessageDigests
@@ -30,11 +28,6 @@
       Applied Asymmetric Cryptography: 03/CSCD27-AppliedAsymmetricCryptography
       Secure Key Management: 03/CSCD27-SecureKeyManagement
       Cryptography Conclusions: 03/CSCD27-CryptographyConclusions
-      #Symmetric Cryptography Exercise: ../tutorials/04/
-      #Asymmetric Protocols: 04/CSCD27-AsymmetricProtocols
-      #Quantum Computing and Quantum Cryptography: 04/CSCD27-Quantum
-      #Hash Functions: 03/CSCD27-CryptographicHashFunctions
-      #Symmetric Protocols: 03/CSCD27-SymmetricProtocols
   readings:
       Programming Satan's Computer: https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf
       How does SSL/TLS work? : https://security.stackexchange.com/questions/20803/how-does-ssl-tls-work
@@ -53,6 +46,7 @@
       Observing Application Protocols - CSCD58S18: 04/cscd58s18_week3_tutorial.pdf
       Basic Socket Programming - CSCD58S18: 04/cscd58s18_week4_tutorial.pdf
       Ethernet and IP Headers - CSCD58S18: 04/cscd58s18_week6_tutorial.pdf
+
 - week: Network Security
   notes:
       Network Security: 05/CSCD27-NetworkSecurity
@@ -67,7 +61,7 @@
 - week: OS and Program Insecurity
   readings: 
      Vuln 1001 C-Family Software Implementation Vulnerabilities: https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+Vulns1001_C-derived+2022_v1/about
-     #Google Analysis of Web-based Malware: http://www.usenix.org/events/hotbots07/tech/full_papers/provos/provos.pdf     
+   
   notes:
       OS and Program Insecurity: 06/CSCD27-OSandProgramInsecurity
 #      Data Breach Case Studies: 10/Security Data Breach Case Studies.pdf
@@ -80,17 +74,24 @@
       OS and Program Security: 07/CSCD27-OSandProgramSecurity
 
 - week: Web Insecurity
-#  #Vulnerabilities, misconfigurations etc
 #  notes:
 #      
-#  readings:
-
+  readings:
+      OWASP Top 10 2021 ed.: https://owasp.org/www-project-top-ten/
+      nOtWASP botton 10; Vulnerabilities that make you cry: https://portswigger.net/research/notwasp-bottom-10-vulnerabilities-that-make-you-cry
+      So you want to be a web security researcher: https://portswigger.net/research/so-you-want-to-be-a-web-security-researcher
+      How to turn security research into profit; a CL.0 case  study: https://portswigger.net/research/how-to-turn-security-research-into-profit 
 #
 - week: Web Security
 #  #Static Analysis, BugBounty, Secure Programming
 #  link: https://youtu.be/QM8I9iI0rtg
 #  notes:
 #      Web Security: 11/CSCD27-WebSecurity
+  readings:
+       Threat Modelling Web Application Security: https://www.acunetix.com/blog/web-security-zone/threat-modeling-web-application-security/
+       10 common developer misconceptions about web application security: https://www.invicti.com/blog/web-security/security-misconceptions-web-application-developers/
+       Web Application Secure Coding Guidelines: https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines
+       
 #
 - week: Human Insecurity
 #  #Social Engineering, Phishing etc
