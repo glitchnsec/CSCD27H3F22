@@ -74,8 +74,9 @@
       OS and Program Security: 07/CSCD27-OSandProgramSecurity
 
 - week: Web Insecurity
-#  notes:
-#      
+  notes:
+      Web Insecurity: 08/CSCD27-WebInsecurity
+      
   readings:
       OWASP Top 10 2021 ed.: https://owasp.org/www-project-top-ten/
       nOtWASP botton 10; Vulnerabilities that make you cry: https://portswigger.net/research/notwasp-bottom-10-vulnerabilities-that-make-you-cry
