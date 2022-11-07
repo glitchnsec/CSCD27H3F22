@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /tutorials/09/
+permalink: /tutorials/12/
 ---
 
 # Symmetric Cryptography
