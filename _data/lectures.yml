@@ -86,8 +86,8 @@
 - week: Web Security
 #  #Static Analysis, BugBounty, Secure Programming
 #  link: https://youtu.be/QM8I9iI0rtg
-#  notes:
-#      Web Security: 11/CSCD27-WebSecurity
+  notes:
+      Web Security: 09/CSCD27-WebSecurity
   readings:
        Threat Modelling Web Application Security: https://www.acunetix.com/blog/web-security-zone/threat-modeling-web-application-security/
        10 common developer misconceptions about web application security: https://www.invicti.com/blog/web-security/security-misconceptions-web-application-developers/
