@@ -111,8 +111,8 @@
 #  notes:
 #      Human Authentication: 07/CSCD27-HumanAuthentication
 
-   readings:
-       Scams and Fraud - Canada, CRA: https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html
+  readings:
+      Scams and Fraud - Canada, CRA: https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html
 #
 - week: Threat Intelligence and Hunting
 #  # log collection, detections, cti etc
