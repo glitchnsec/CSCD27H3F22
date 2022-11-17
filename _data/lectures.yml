@@ -96,18 +96,23 @@
        
 #
 - week: Human Insecurity
-#  #Social Engineering, Phishing etc
-#  link: https://youtu.be/vVel9jrACuE
-#  notes:
-#      Web Security: 12/CSCD27-SocialEngineering
+  notes:
+      Human Insecurity: 10/CSCD27-HumanInsecurity
+      Beyond this course: 10/CSCD27-BeyondThisCourse
   readings:
       Handcrafted Fraud and Extortion - Manual Account Hijacking in the Wild: http://services.google.com/fh/files/blogs/google_hijacking_study_2014.pdf
-#
+      TrendMicro Digital Wellness: https://news.trendmicro.com/category/digital-wellness/
+      Ontario Moving Scam 2022: https://www.cbc.ca/news/canada/toronto/moving-scam-charges-toronto-1.6618362
+      RCMP Cyber safety: https://www.rcmp-grc.gc.ca/en/cyber-safety
+
 - week: Human Security
 #  #Human Authentication, Access Control, Security Awareness
 #  link: https://utoronto.zoom.us/j/81869016590
 #  notes:
 #      Human Authentication: 07/CSCD27-HumanAuthentication
+
+   readings:
+       Scams and Fraud - Canada, CRA: https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html
 #
 - week: Threat Intelligence and Hunting
 #  # log collection, detections, cti etc
