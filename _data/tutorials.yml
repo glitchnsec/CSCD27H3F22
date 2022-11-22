@@ -29,8 +29,9 @@
 - week: Web Security
   handout: 10/
 
-- week: Human Insecurity
+- week: Human (In)security
+  handout: 11/
 
 #  handout: 11/
 #  handout: 10/
-- week: Human Security
+- week: Threat hunting and Intelligence
