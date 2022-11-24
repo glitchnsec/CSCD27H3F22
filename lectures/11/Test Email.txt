@@ -1,0 +1,46 @@
+Delivered-To: redacted@gmail.com
+Received: by 10.223.130.15 with SMTP id 15csp3891876wrb;
+        Mon, 22 Jan 2018 23:31:31 -0800 (PST)
+X-Google-Smtp-Source: AH8x224LKDKFHz9GQfk/Q0PsQuCuuXAk57sJUXTdMg74BF5nvI7zrQDwa/cDpEJgFs7PdMo0p2cd
+X-Received: by 10.107.167.136 with SMTP id q130mr2546808ioe.173.1516692691417;
+        Mon, 22 Jan 2018 23:31:31 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1516692691; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YDgJ08XWkF/I9BepU6WcHKk3NDBUQc2bPp+8NWlsVH/AbnOJWH5iLIAy0cIkSNjqIv
+         qodVlauXno4MA2rs6Zjy/Kn+VyEzwYyKjU/WUJu0BZ1wrSM+24JR5EyXvwbjcH2u71oa
+         GhlvULX6HmJVW4AlSCm1cNl7PdWN0xCPo80Eiv6RHh9ERYLkwPRyen/dO9FwyybnIYka
+         Gb9SRL2TP68UrDxPlHIW2u4juI6fGChQGPhoWtJm3/KAmkSHumLN1PeGHt2OgrIAivaD
+         oyzPJyQos/wA3shQsgZbe2vTFtg6V8wBAIXtFig2P6BQptb/jmC2/5QdT7mFjaRnJ+c8
+         xY3Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:from:date:arc-authentication-results;
+        bh=S7MfL3WyNCJJphHLiLR3MF2X25bUYeCPDPgkzirIS/s=;
+        b=fS5R85Rz0HcvGGgzp9ET6Ae5awykyeZDJEGtKFiLEjPOBfRbhly2pjTTDFR8krgilA
+         cWgYJU4rxDsMnrIw2/lrG0qLSgy+KsrwQ/1w7EEIAx7fQmIqgGEtTNbjespz5fL0Dn1U
+         Og+YUen3/kc4Zs0v3YONssQIVGKypmctK7l4xJQOIxdYKLZTDPggkKFhejYIAHx/OK85
+         ihKZQrildlE1XhAjJw5payPPVE3JXjlonEhQ/2JxnNLmo3Cr0JBCEQzIaVOsPjZ+Qfhs
+         4t+cZdt71te5vdHgoYM2YaY4Otp8FsmbKZFIY7a2WTqZrN7bh3mGqfdsmIa9rbA/xpTO
+         S0fQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=softfail (google.com: domain of transitioning fakeymcfakeface@mail.utoronto.ca does not designate 142.1.ab.cd as permitted sender) smtp.mailfrom=fakeymcfakeface@mail.utoronto.ca
+Return-Path: <fakeymcfakeface@mail.utoronto.ca>
+Received: from redacted1.utsc.utoronto.ca (redacted1.utsc.utoronto.ca. [142.1.ab.cd])
+        by mx.google.com with ESMTPS id y103si15047506ioi.116.2018.01.22.23.31.31
+        for <redacted@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 22 Jan 2018 23:31:31 -0800 (PST)
+Received-SPF: softfail (google.com: domain of transitioning fakeymcfakeface@mail.utoronto.ca does not designate 142.1.ab.cd as permitted sender) client-ip=142.1.ab.cd;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning fakeymcfakeface@mail.utoronto.ca does not designate 142.1.ab.cd as permitted sender) smtp.mailfrom=fakeymcfakeface@mail.utoronto.ca
+Received: from redacted1.utsc.utoronto.ca (IITS-B473-01.utsc-labs.utoronto.ca [142.1.24.104])
+	by redacted1.utsc.utoronto.ca (8.14.4/8.14.4) with ESMTP id w0N7L2Yi044958
+	for redacted@gmail.com; Tue, 23 Jan 2018 02:31:09 -0500
+Date: Tue, 23 Jan 2018 02:31:09 -0500
+From: fakeymcfakeface@mail.utoronto.ca
+Message-Id: <201801230731.w0N7L2Yi044958@redacted1.utsc.utoronto.ca>
+SUBJECT: Test Email
+To: undisclosed-recipients:;
+X-Greylist: inspected by milter-greylist-4.5.12 (redacted1.utsc.utoronto.ca [142.1.ab.cd]); Tue, 23 Jan 2018 02:31:30 -0500 (EST) for IP:'142.1.24.104' DOMAIN:'IITS-B473-01.utsc-labs.utoronto.ca' HELO:'redacted1.utsc.utoronto.ca' FROM:'fakeymcfakeface@mail.utoronto.ca' RCPT:''
+X-Greylist: Sender DNS name whitelisted, not delayed by milter-greylist-4.5.12 (redacted1.utsc.utoronto.ca [142.1.ab.cd]); Tue, 23 Jan 2018 02:31:30 -0500 (EST)
+
+This is a test email

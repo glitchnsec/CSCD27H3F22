@@ -107,13 +107,13 @@
       Cybersecurity Into the Realm: https://glitchnsec.github.io/presentations/cybersecurity-into-the-realm.html
 
 - week: Human Security
-#  #Human Authentication, Access Control, Security Awareness
-#  link: https://utoronto.zoom.us/j/81869016590
-#  notes:
-#      Human Authentication: 07/CSCD27-HumanAuthentication
+  notes:
+      Human Security: 11/CSCD27-HumanSecurity
+      Alumni Industry Insight Panel: 11/CSCD27-AlumniIndustryInsightPanel
 
   readings:
       Scams and Fraud - Canada, CRA: https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html
+      Bluetooth - GetCyberSafe: https://www.getcybersafe.gc.ca/en/secure-your-connections/bluetooth
 #
 - week: Threat Intelligence and Hunting
 #  # log collection, detections, cti etc
