@@ -20,12 +20,12 @@ In this tutorial we will focus on **Hypothesis** driven hunt!
 ## Hypothesis Driven Hunt
 ---
 
-We begin by considering what Mallory might do within a victim network (building a hypothesis) and then we would test the hypothesis (given we have the data sources) by searching for evidence of the hypothetical behavior within the network. Eventually we would build alerts that will trigger when a future occurence of a behavior occurs in the future!
+We begin by considering what Mallory might do within a victim network (building a hypothesis) and then we would test the hypothesis (given we have the data sources) by searching for evidence of the hypothetical behavior within the network. Eventually we would build alerts that will trigger when a future occurrence of a behavior occurs in the future!
 
 ### What might Mallory do?
 ---
 
-The [Mitre Att&ck Framework](https://attack.mitre.org/) is a catalogue of adversarial Techniques, Tactic and Procedures (a.k.a TTPs). This framework aids defenders in describing adversarial activity concisely, model detections and test secrutiy controls to name a few.
+The [Mitre Att&ck Framework](https://attack.mitre.org/) is a catalogue of adversarial Techniques, Tactic and Procedures (a.k.a TTPs). This framework aids defenders in describing adversarial activity concisely, model detections and test security controls to name a few.
 
 - A **Tactic** is like an objective. E.g As Mallory, I would like to:
     - Perform reconnaissance (Gather intelligence on victim)
@@ -62,7 +62,7 @@ This threat actor is known to leverage
 
 - Spear Phishing for initial access
 - Logon auto start scripts for persistence
-- Protocol tunnelling for command and control
+- Protocol tunneling for command and control
 - Exfiltration over command and control channel
 
 Hypothetically, Bank of Fail may have also be compromised. As a threat hunter, the organization is looking to your team to confirm or debunk this hypothesis
@@ -85,20 +85,20 @@ You should refer to [Mitre Att&ck Framework](https://attack.mitre.org/) to infor
 
     - Phishing attempts at Bank of Fail
     - Logon auto start scripts on Windows endpoints at Bank of Fail
-    - Protocol tunnelling
+    - Protocol tunneling
 
 **Discussion Q3**
 
-- How might you identify (search) for rouge auto start scripts 
+- How might you identify (search) for rogue auto start scripts 
 
 **Discussion Q4**
 
-- How might you identify (search) for protocol tunnelling within Bank of Fail's network
+- How might you identify (search) for protocol tunneling within Bank of Fail's network
 
 **Discussion Q5**
 
 - How might you develop detections to identify:
 
     - Phishing attempts at Bank of Fail
-    - Installation of rouge auto start scripts on Windows endpoints at Bank of Fail
-    - Protocol tunnelling withing Bank of Fail's network
+    - Installation of rogue auto start scripts on Windows endpoints at Bank of Fail
+    - Protocol tunneling withing Bank of Fail's network
