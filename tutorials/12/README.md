@@ -18,10 +18,12 @@ There are three main types of hunts:
 In this tutorial we will focus on **Hypothesis** driven hunt! 
 
 ## Hypothesis Driven Hunt
+---
 
 We begin by considering what Mallory might do within a victim network (building a hypothesis) and then we would test the hypothesis (given we have the data sources) by searching for evidence of the hypothetical behavior within the network. Eventually we would build alerts that will trigger when a future occurence of a behavior occurs in the future!
 
 ### What might Mallory do?
+---
 
 The [Mitre Att&ck Framework](https://attack.mitre.org/) is a catalogue of adversarial Techniques, Tactic and Procedures (a.k.a TTPs). This framework aids defenders in describing adversarial activity concisely, model detections and test secrutiy controls to name a few.
 
@@ -52,6 +54,7 @@ Defensive security professionals (Defenders) create adversary profiles based on 
 In a hypothetical hunt, the hunter assumes compromise and hunts for evidence of one or more TTPs on the endpoint or network.
 
 ### Our Hypothesis
+---
 
 Bank of Fail is major player in the financial industry, customer data security is a core business pillar. Recently threat actor D27-F22 (Mallory's fancy APT name), has been observed to compromise other banks in the region within the last six months.
 
@@ -65,6 +68,7 @@ This threat actor is known to leverage
 Hypothetically, Bank of Fail may have also be compromised. As a threat hunter, the organization is looking to your team to confirm or debunk this hypothesis
 
 ### The hunt
+---
 
 Hunting details may vary slightly based on the type of hunt. However, it basically involves
 
@@ -83,10 +87,18 @@ You should refer to [Mitre Att&ck Framework](https://attack.mitre.org/) to infor
     - Logon auto start scripts on Windows endpoints at Bank of Fail
     - Protocol tunnelling
 
-**Discussion Q2**
+**Discussion Q3**
 
 - How might you identify (search) for rouge auto start scripts 
 
-**Discussion Q3**
+**Discussion Q4**
 
 - How might you identify (search) for protocol tunnelling within Bank of Fail's network
+
+**Discussion Q5**
+
+- How might you develop detections to identify:
+
+    - Phishing attempts at Bank of Fail
+    - Installation of rouge auto start scripts on Windows endpoints at Bank of Fail
+    - Protocol tunnelling withing Bank of Fail's network
