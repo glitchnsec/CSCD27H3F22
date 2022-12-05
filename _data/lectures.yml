@@ -115,12 +115,11 @@
       Scams and Fraud - Canada, CRA: https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html
       Bluetooth - GetCyberSafe: https://www.getcybersafe.gc.ca/en/secure-your-connections/bluetooth
       RCMP Cyber safety: https://www.rcmp-grc.gc.ca/en/cyber-safety
-#
-- week: Threat Intelligence and Hunting
-#  # log collection, detections, cti etc
-#  notes:
 
-#      Asymmetric Protocols: 04/CSCD27-AsymmetricProtocols
-#  #     Quantum Computing and Quantum Cryptography: 04/CSCD27-Quantum
-#  readings:
+- week: Threat Intelligence and Hunting
+  notes:
+      Threat Intelligence and Hunting (Guest; Adrian Korn): 12/UofT-GuestLecture-CTI+TH-AdrianKorn.pdf
+
+  readings:
+      Security Data Breach Case Studies (Sonika Verma): 10/Security Data Breach Case Studies.pdf
 
